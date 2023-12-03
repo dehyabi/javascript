@@ -13,4 +13,4 @@ console.log("Hello", firstName);
 console.log("You are", age, "years old");
 console.log("enrolled:", teacher);
 
-document.getElementById("p1").innerHTMl = "Hello " + firstName;
+document.getElementById("p1").innerHTML= "Hello " + firstName;
