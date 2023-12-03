@@ -8,7 +8,7 @@
 
 
 
-let students = 42;
+//let students = 42;
 
 //students = students + 1;
 //students = students - 1;
@@ -22,4 +22,29 @@ let students = 42;
 //students *= 4;
 //students /= 4;
 
-console.log(students);
+/*
+
+operator precedence
+
+1. parenthesis ()
+2. exponents
+3. multiplication & division
+4. addition & subtraction
+
+*/
+
+let result = 899 + 2566 * (23 + 4);
+
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
