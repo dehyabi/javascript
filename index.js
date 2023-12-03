@@ -9,6 +9,8 @@ let firstName = "Dehya"; //strings
 let age = 31; //numbers
 let teacher = false; //booleans
 
-console.log(firstName);
-console.log(age);
-console.log(teacher);
+console.log("Hello", firstName);
+console.log("You are", age, "years old");
+console.log("enrolled:", teacher);
+
+document.getElementById("p1").innerHTMl = "Hello " + firstName;
