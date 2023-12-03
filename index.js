@@ -1,50 +1,17 @@
-/*
- arithmetic is a combination of 
- operands (values, variables, etc.)
- operators (+ - * / %)
- that can be evaluated to a value
- ex. y = x + 5;
-*/
+// How to accept user input
 
 
+// EASY WAY with a window prompt
 
-//let students = 42;
+//let username = window.prompt("What's your name?")
+//console.log(username);
 
-//students = students + 1;
-//students = students - 1;
-//students = students * 3;
-//students = students / 2;
+// DIFFICULT WAY with HTML textbox
 
-//let extraStudents = students % 3;
+let username;
 
-//students += 1;
-//students -= 1;
-//students *= 4;
-//students /= 4;
-
-/*
-
-operator precedence
-
-1. parenthesis ()
-2. exponents
-3. multiplication & division
-4. addition & subtraction
-
-*/
-
-let result = 899 + 2566 * (23 + 4);
-
-
-console.log(result);
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("submit").onclick = function(){
+ username = document.getElementById("username").value;
+ console.log(username);
+ document.getElementById("label").innerHTML = "Hello " + username;
+}
