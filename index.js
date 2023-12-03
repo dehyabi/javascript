@@ -1,15 +1,11 @@
-console.log("I like chicken!");
-console.log("It's really amazing!");
+// A variable is a container for storing data
+// A variable behaves as if it was the value that it contains
 
-window.alert("I REALLY LOVE CHICKEN!");
+// Two steps:
+// 1. Declarations (var, let, const)
+// 2. Assignment (= assignment operator)
 
-//This is a comment
+let age;
+age = 21;
 
-/*
- This
- is
- a
- multiline
- comment
-
-*/
+console.log(age);
