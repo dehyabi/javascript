@@ -5,9 +5,10 @@
 // 1. Declarations (var, let, const)
 // 2. Assignment (= assignment operator)
 
-let firstName = "Dehya";
-let age = 31;
+let firstName = "Dehya"; //strings
+let age = 31; //numbers
+let teacher = false; //booleans
 
- //age = age + 1;
-
+console.log(firstName);
 console.log(age);
+console.log(teacher);
