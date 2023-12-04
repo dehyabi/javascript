@@ -1,17 +1,23 @@
-// How to accept user input
+// Type conversion : change the data type of a value to another (strings, number, booleans)
+/*
+let age = window.prompt("How old are you?");
 
+console.log(typeof age);
+age = Number(age);
+console.log(typeof age);
+age += 1;
 
-// EASY WAY with a window prompt
+console.log("Happy birthday! You are", age, "years old");
+*/
 
-//let username = window.prompt("What's your name?")
-//console.log(username);
+let x;
+let y;
+let z;
 
-// DIFFICULT WAY with HTML textbox
+x = Number("3.14");
+y = String("3.14");
+z = Boolean(1);
 
-let username;
-
-document.getElementById("submit").onclick = function(){
- username = document.getElementById("username").value;
- console.log(username);
- document.getElementById("label").innerHTML = "Hello " + username;
-}
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
