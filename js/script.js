@@ -41,6 +41,7 @@ function iterateObject(obj) {
             iterateObject(obj[key]); // recursive call for nested objects
         } else {
             console.log(`key: ${obj[key]}`);
+            document.getElementById('container').innerHTML += `<div>label: ${obj[key]}</div>`;
         }
     }
 }
