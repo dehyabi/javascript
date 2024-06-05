@@ -1,49 +1,27 @@
-let cars = {
-    label: 'Autos',
-    subs: [
-        {
-          label: 'SUVs',
-          subs: []
-        },
-        {
-          label: 'Trucks',
-          subs: [
-            {
-              label: '2 Wheel Drive',
-              subs: []
-            },
-            {
-              label: '4 Wheel Drive',
-              subs: [
-                {
-                  label: 'Ford',
-                  subs: []
-                },
-                {
-                  label: 'Chevrolet',
-                  subs: []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          label: 'Sedan',
-          subs: []
-        }
-    ]
-
-}
-
-function iterateObject(obj) {
-    for (let key in obj) {
-        if(typeof obj[key] === "object" && obj[key] !== null) {
-            iterateObject(obj[key]); // recursive call for nested objects
-        } else {
-            console.log(`key: ${obj[key]}`);
-            document.getElementById('container').innerHTML += `<div>label: ${obj[key]}</div>`;
-        }
+const userInfo = {
+    firstName: 'Avi',
+    lastName: 'Flombaum',
+    companyName: 'Flatbook Labs',
+    jobTitle: 'Developer Apprentice',
+    friend1firstName: 'Joe',
+    friend1lastName: 'Burgess',
+    friend1companyName: 'Flatbook Labs',
+    friend1jobTitle: 'Developer Apprentice',
+    friend2firstName: 'Gabe',
+    friend2lastName: 'Jackson',
+    friend2companyName: 'Flatbook Labs',
+    friend2jobTitle: 'Senior Developer',
+    project1title: 'Flatbook',
+    project1description: 'The premier Flatiron School-based social network in the world.',
+    project2title: 'Scuber',
+    project2description: 'A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.'
+  };
+  
+  function shallowIterator (target) {
+    for (const key in target) {
+      console.log(target[key]);
+      document.getElementById('container').innerHTML += `<div>${target[key]}</div>`;
     }
-}
-
-iterateObject(cars);
+  }
+  
+  shallowIterator(userInfo);
